@@ -2,6 +2,13 @@
  * Basic typography style for copy text
  */
 body {
-  color: $text-color;
-  font: normal 125% / 1.4 $text-font-stack;
+  font-family: "Montserrat", sans-serif;
+  color: $cor-preta;
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+
+b,
+strong {
+  font-weight: 600;
 }

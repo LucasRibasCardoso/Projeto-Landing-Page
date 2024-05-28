@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+img {
+  max-width: 100%;
+}
+
+/**
+ * Basic typography style for copy text
+ */
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #1a1b1f;
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+
+b,
+strong {
+  font-weight: 600;
+}
+
+.secao {
+  display: flex;
+  flex-flow: column;
+  padding: 6rem 2rem;
+}
+
+.container {
+  display: flex;
+  max-width: 100rem;
+  margin: auto;
+}
+
+.botao {
+  border-radius: 5rem;
+  padding: 1rem 2.5rem;
+  cursor: pointer;
+  border: solid 2px #000;
+  border-right-width: 4px;
+  border-bottom-width: 4px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.9rem;
+}
+.botao:hover {
+  border-width: 3px;
+}
+.botao--amarelo {
+  background-color: #eebe2a;
+  border-color: #a5800d;
+  color: #fff;
+}
+
+.caixa {
+  background-color: #f1f1f1;
+  margin-bottom: 6rem;
+  border-radius: 2.5rem;
+  padding: 3rem 2rem;
+  max-width: 50rem;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+.caixa__div-logo {
+  width: 6.5rem;
+  height: 6.5rem;
+  padding: 1.2rem;
+  box-shadow: inset 0 0 0.8rem rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(35%, -35%);
+  background-color: #f1f1f1;
+}
+.caixa__titulos {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 0.65rem;
+}
+.caixa__titulos--data {
+  margin-bottom: 3rem;
+}
+.caixa__h1 {
+  color: #1c415c;
+  font-size: 5rem;
+  line-height: 1;
+  text-align: center;
+}
+.caixa__subtitulo {
+  font-size: 2.7rem;
+  font-weight: 700;
+}
+.caixa__subtitulo--cinza {
+  color: #4b4d4d;
+}
+.caixa__subtitulo--online-gratuito {
+  margin: 2rem 0 2rem 0;
+}
+.caixa__lista {
+  list-style: none;
+  font-size: 2rem;
+  display: flex;
+  flex-flow: column;
+  gap: 0.8rem;
+}
+.caixa__item-lista {
+  display: flex;
+  align-items: start;
+  gap: 0.8rem;
+}
+.caixa__icone {
+  width: 2rem;
+  margin-top: 0.3rem;
+}
+
+.secao--hero {
+  background-image: url(https://assets-global.website-files.com/61b9e0dd381626819c8d4f83/64957938a8a62d8071397ed5_pgc-python-bg1.webp);
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 0;
+}
+
+.div-lira {
+  display: flex;
+  position: absolute;
+  height: 60rem;
+  width: 100%;
+  right: 0;
+  bottom: 0;
+  transform: translateX(40%);
+}
+
+.container--hero {
+  align-items: end;
+  position: relative;
+  width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */
