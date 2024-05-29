@@ -4,9 +4,7 @@
   border-radius: 2.5rem;
   padding: 3rem 2rem;
   max-width: 50rem;
-  display: flex;
-  flex-flow: column;
-  align-items: center;
+  @include flex($direction: column, $align: center, $gap: 2rem);
   position: relative;
   z-index: 1;
   box-shadow: inset 0 0 1rem 0.3rem rgba(0, 0, 0, 0.25);
@@ -17,8 +15,7 @@
     padding: 1.2rem;
     box-shadow: inset 0 0 0.8rem rgba(black, 0.2);
     border-radius: 50%;
-    display: flex;
-    align-items: center;
+    @include flex();
     position: absolute;
     top: 0;
     right: 0;
@@ -27,10 +24,7 @@
   }
 
   &__titulos {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    gap: 0.65rem;
+    @include flex($direction: column, $align: center, $gap: 0.65rem);
 
     &--data {
       margin-bottom: 3rem;
@@ -39,13 +33,11 @@
 
   &__h1 {
     color: #1c415c;
-    font-size: 5rem;
-    line-height: 1;
+    @extend %titulo;
     text-align: center;
   }
   &__subtitulo {
-    font-size: 2.7rem;
-    font-weight: 700;
+    @extend %subtitulo;
 
     &--cinza {
       color: #4b4d4d;
@@ -58,16 +50,13 @@
   &__lista {
     list-style: none;
     font-size: 2rem;
-    display: flex;
-    flex-flow: column;
-    gap: 0.8rem;
+    @include flex($direction: column, $gap: 0.8rem);
   }
 
   &__item-lista {
-    display: flex;
-    align-items: start;
-    gap: 0.8rem;
+    @include flex($align: start, $gap: 0.8rem);
   }
+
   &__icone {
     width: 2rem;
     margin-top: 0.3rem;

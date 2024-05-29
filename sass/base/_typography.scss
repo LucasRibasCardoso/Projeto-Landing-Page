@@ -3,12 +3,30 @@
  */
 body {
   font-family: "Montserrat", sans-serif;
-  color: $cor-preta;
-  font-size: 1.6rem;
+  color: $cor-texto;
+  font-size: 1.9rem;
   line-height: 1.4;
 }
 
 b,
 strong {
   font-weight: 600;
+}
+
+.titulo {
+  @extend %titulo;
+  font-weight: 500;
+
+  & span {
+    color: $cor-azul-claro;
+    font-weight: 700;
+  }
+}
+
+.subtitulo {
+  @extend %subtitulo;
+
+  & span {
+    color: $cor-amarelo;
+  }
 }

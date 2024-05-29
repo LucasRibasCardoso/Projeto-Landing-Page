@@ -12,6 +12,17 @@
     background-color: $cor-cinza;
     box-shadow: 0 0.5rem 1rem -0.2rem rgba(black, 0.2);
   }
+
+  &--quem {
+    background-image: url(https://assets-global.website-files.com/61b9e0dd381626819c8d4f83/62cefb1ecf7f4662905b5b1e_%5BBACKGROUND%5D%20-%20BANNER%2005%20-%20desktop.webp);
+    background-size: cover;
+    background-position-x: 50%;
+    background-position-y: 100%;
+    background-repeat: no-repeat;
+    padding-bottom: 0;
+    padding-top: 20rem;
+    margin-top: -15rem;
+  }
 }
 
 .container {
@@ -20,10 +31,32 @@
     position: relative;
     width: 100%;
   }
+
+  &--passo,
+  &--aprender {
+    @include flex($direction: column, $gap: 6rem, $align: start);
+  }
+
+  &--quem {
+    position: relative;
+  }
+}
+
+.grid {
+  &--passo {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 6rem;
+    column-gap: 3rem;
+  }
+
+  &--aprender {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+  }
 }
 
 .div-lira {
-  display: flex;
+  @include flex();
   position: absolute;
   height: 60rem;
   width: 100%;
@@ -32,6 +65,59 @@
   transform: translateX(40%);
 }
 
+.img-lira {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  align-self: center;
+}
+
 .disclaimer__paragrafo {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
+}
+
+.cabecalho-titulo {
+  @include flex($align: center, $gap: 1.6rem);
+}
+
+.aprender__item {
+  overflow: hidden;
+  border-radius: 2rem;
+
+  &-img {
+    border-radius: 2rem;
+    transition: transform ease 300ms;
+
+    &:hover {
+      transform: scale(1.05, 1.05);
+    }
+  }
+}
+
+.quem {
+  @include flex($gap: 3rem, $direction: column);
+  color: #fff;
+  max-width: 50%;
+  width: 100%;
+  margin-bottom: 6rem;
+
+  &__cabecalho {
+    border-left: solid 4px $cor-amarelo;
+    padding-left: 2rem;
+  }
+
+  &__textos {
+    @include flex($gap: 2rem, $direction: column);
+
+    & span {
+      color: $cor-amarelo;
+      font-weight: 600;
+    }
+  }
+}
+
+.img-lira-logo {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 40%;
 }

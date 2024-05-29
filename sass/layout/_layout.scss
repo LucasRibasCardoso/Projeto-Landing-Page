@@ -1,11 +1,14 @@
 .secao {
-  display: flex;
-  flex-flow: column;
+  @include flex($direction: column);
   padding: 6rem 2rem;
 }
 
 .container {
-  display: flex;
+  @include flex();
   max-width: 100rem;
   margin: auto;
+}
+
+.grid {
+  display: grid;
 }
