@@ -12,3 +12,12 @@
 .grid {
   display: grid;
 }
+
+.rodape {
+  padding: 4.5rem 2rem;
+
+  &__logo {
+    width: 3.7rem;
+    height: 3.7rem;
+  }
+}

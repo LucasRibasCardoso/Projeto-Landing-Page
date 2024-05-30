@@ -10,7 +10,8 @@
 @import "layout/layout";
 
 // 5. Components
-@import "components/button", "components/caixa", "components/passo";
+@import "components/button", "components/caixa", "components/passo",
+  "components/rodape", "components/popup";
 
 // 6. Page-specific styles
 @import "pages/inscricao";

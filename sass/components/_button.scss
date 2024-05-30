@@ -3,28 +3,13 @@
 // -----------------------------------------------------------------------------
 
 .botao {
-  border-radius: 5rem;
-  padding: 1rem 2.5rem;
-  cursor: pointer;
-  border: solid 2px #000;
-  border-bottom-width: 4px;
-  border-right-width: 4px;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 1.9rem;
-  transition: all 0.4s;
-
-  &:hover {
-    transform: scale(1.05, 1.05);
-  }
+  @extend %botao;
 
   &--amarelo {
-    background-color: $cor-amarelo;
-    border-color: darken($cor-amarelo, 20%);
-    color: #fff;
+    @extend %botao--amarelo;
   }
 
   &--centralizado {
-    align-self: center;
+    @extend %botao--centralizado;
   }
 }

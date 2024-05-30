@@ -1,0 +1,90 @@
+.popup--aberto {
+  & .popup {
+    display: flex;
+  }
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(#fff, 0.9);
+  backdrop-filter: blur(2.5px);
+
+  &__inputs {
+    @include flex($direction: column, $gap: 0.8rem);
+  }
+
+  &__input {
+    border-radius: 5rem;
+    border: solid 2px #000;
+    padding: 0.8rem 1.3rem;
+    font-size: inherit;
+
+    &--amarelo {
+      border-color: $cor-amarelo;
+    }
+
+    &:focus-visible {
+      outline: none;
+      box-shadow: 0 0 1rem rgb($cor-amarelo, 0.7);
+    }
+  }
+
+  &__botao {
+    @extend %botao;
+    margin-top: 3.1rem;
+
+    &--amarelo {
+      @extend %botao--amarelo;
+    }
+  }
+
+  &__fechar {
+    @include flex($align: center, $justify: center, $gap: 2rem);
+    cursor: pointer;
+    position: absolute;
+    top: 0rem;
+    right: 0rem;
+    transform: translate(25%, -25%);
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    font-size: 1.9rem;
+    font-weight: 700;
+    line-height: 1;
+    border: solid 2px #0000;
+    background-color: #fff;
+    transition: all 400ms;
+
+    &:hover {
+      border-width: 1px;
+    }
+
+    &--amarelo {
+      background-color: $cor-amarelo;
+      border-color: darken($cor-amarelo, 30%);
+      color: #fff;
+    }
+  }
+
+  &__container {
+    @include flex($direction: column, $gap: 2.5rem);
+    position: relative;
+    width: 50rem;
+    background-color: #fff;
+    padding: 3.1rem;
+    border-radius: 2.5rem;
+    box-shadow: inset 0 0 0.8rem 0.2rem rgb(0, 0, 0, 0.2);
+
+    &__textos {
+      @include flex($direction: column, $gap: 1.6rem);
+    }
+  }
+}

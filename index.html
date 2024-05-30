@@ -7,7 +7,7 @@
 
     <title>Pagina de Inscrição Hashtag Treinamentos</title>
   </head>
-  <body>
+  <body class="popup--aberto">
     <section class="secao secao--hero">
       <div class="container container--hero">
         <div class="caixa">
@@ -65,7 +65,9 @@
           <p class="caixa__subtitulo caixa__subtitulo--online-gratuito">
             100% Online e Gratuito
           </p>
-          <button class="botao botao--amarelo">Quero participar!</button>
+          <button class="botao botao--amarelo js-botao">
+            Quero participar!
+          </button>
         </div>
         <div class="div-lira">
           <img
@@ -229,7 +231,7 @@
           </a>
         </div>
 
-        <button class="botao botao--amarelo botao--centralizado">
+        <button class="botao botao--amarelo botao--centralizado js-botao">
           Quero assistir as aulas de graça
         </button>
       </div>
@@ -269,5 +271,58 @@
         </div>
       </div>
     </section>
+
+    <section class="rodape">
+      <div class="container container--rodape">
+        <img
+          src="https://assets-global.website-files.com/61b9e0dd381626819c8d4f83/61b9f085f608c40d5a8b97f9_logo%20hash%20quadrada%20h%20(1).webp"
+          alt="logo da hashtag"
+          class="rodape__logo"
+        />
+        <a
+          href="https://excelparaestagio.klickpages.com.br/politica-privacidade"
+          >Politica de Privacidade</a
+        >
+        <p>|</p>
+        <a href="https://excelparaestagio.klickpages.com.br/termos-uso"
+          >Termos de Uso</a
+        >
+      </div>
+    </section>
+
+    <div class="popup">
+      <div class="popup__container">
+        <div class="popup__inputs">
+          <input
+            type="text"
+            class="popup__input popup__input--amarelo"
+            placeholder="Seu primeiro nome"
+            required
+          />
+          <input
+            type="text"
+            class="popup__input popup__input--amarelo"
+            placeholder="Seu melhor e-mail"
+            required
+          />
+          <input
+            type="text"
+            class="popup__input popup__input--amarelo"
+            placeholder="Insira seu whatsapp com DDD"
+            required
+          />
+        </div>
+
+        <button class="popup__botao popup__botao--amarelo">
+          Quero saber mais!
+        </button>
+
+        <div class="popup__textos"></div>
+
+        <div class="popup__fechar popup__fechar--amarelo js-botao">x</div>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
   </body>
 </html>

@@ -1,0 +1,10 @@
+.container--rodape {
+  justify-content: end;
+  align-items: center;
+  gap: 0.8rem;
+
+  & a {
+    text-decoration: none;
+    color: inherit;
+  }
+}
