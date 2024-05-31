@@ -3,9 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="StyleSheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+      rel="prelaod"
+      as="style"
+      onload="this.onload=null;this.rel=StyleSheet"
+    />
 
-    <title>Pagina de Inscrição Hashtag Treinamentos</title>
+    <title>Inscrição Jornada Python</title>
   </head>
   <body class="popup--aberto">
     <section class="secao secao--hero">
@@ -71,8 +79,12 @@
         </div>
         <div class="div-lira">
           <img
-            src="https://assets-global.website-files.com/61b9e0dd381626819c8d4f83/62cef668d5cacb28cd77d5ef_jo%C3%A3o%20lira%20%2B%20dash.webp"
+            src="img/lira_home.webp"
             alt="imagem do lira"
+            loading="lazy"
+            srcset="img/lira_home.webp 700w, img/lira_home_424.webp 424w"
+            sizes="(max-width: 770px) 424px 
+            700px"
           />
         </div>
       </div>
@@ -95,6 +107,8 @@
           <img
             src="https://assets-global.website-files.com/61b9e0dd381626819c8d4f83/62cef84825a7b7d2f1aef5e3_%5BELEMENTO%5D%20seta%20dupla.png"
             alt="icone seta"
+            class="img-seta"
+            loading="lazy"
           />
           <h2 class="titulo titulo--passo">
             Siga o <span>passo a passo!</span>
@@ -109,6 +123,7 @@
                   src="img/alert-triangle-svgrepo-com (1).svg"
                   alt="alerta"
                   class="passo__icone"
+                  loading="lazy"
                 />
               </div>
               <p class="passo__titulo passo__titulo--azul">Passo 1</p>
@@ -123,7 +138,11 @@
           <div class="passo">
             <div class="passo__cabecalho">
               <div class="passo__caixa-icone">
-                <img src="img/certificate-svgrepo-com.svg" alt="certificado" />
+                <img
+                  src="img/certificate-svgrepo-com.svg"
+                  alt="certificado"
+                  loading="lazy"
+                />
               </div>
               <p class="passo__titulo passo__titulo--azul">Passo 2</p>
             </div>
@@ -138,7 +157,11 @@
           <div class="passo">
             <div class="passo__cabecalho">
               <div class="passo__caixa-icone">
-                <img src="img/chart-svgrepo-com.svg" alt="grafico" />
+                <img
+                  src="img/chart-svgrepo-com.svg"
+                  alt="grafico"
+                  loading="lazy"
+                />
               </div>
               <p class="passo__titulo passo__titulo--azul">Passo 3</p>
             </div>
@@ -153,7 +176,11 @@
           <div class="passo">
             <div class="passo__cabecalho">
               <div class="passo__caixa-icone">
-                <img src="img/python-127-svgrepo-com.svg" alt="python" />
+                <img
+                  src="img/python-127-svgrepo-com.svg"
+                  alt="python"
+                  loading="lazy"
+                />
               </div>
               <p class="passo__titulo passo__titulo--azul">Passo 3</p>
             </div>
@@ -168,6 +195,7 @@
             src="https://assets-global.website-files.com/61b9e0dd381626819c8d4f83/62cef848a5d528c80b0c3f6b_%5BELEMENTO%5D%20jo%C3%A3o%20lira%20e%20planilha.webp"
             alt="lira-hashtag"
             class="img-lira"
+            loading="lazy"
           />
         </div>
       </div>
@@ -179,14 +207,17 @@
           <img
             src="https://assets-global.website-files.com/61b9e0dd381626819c8d4f83/62cef98e3d834a18ba77139f_%5BELEMENTO%5D%20seta-dupla.png"
             alt="icone seta"
+            class="img-seta"
+            loading="lazy"
           />
-          <h2 class="titulo titulo--passo">
+          <h2 class="titulo titulo--passo titulo--pequeno">
             Nesse <span>evento gratuito</span> você vai aprender:
           </h2>
         </div>
 
         <div class="grid grid--aprender">
           <a
+            target="_blank"
             href="https://www.youtube.com/watch?v=qbZsaBMxCJI"
             class="aprender__item"
           >
@@ -194,10 +225,12 @@
               src="https://assets-global.website-files.com/61b9e0dd381626819c8d4f83/64ecec733661d11fda8a436c_%5BLPY15%5D%20Thumb%20-%20Aula%201.webp"
               alt="tumbnail-aula1"
               class="aprender__item-img"
+              loading="lazy"
             />
           </a>
 
           <a
+            target="_blank"
             href="https://www.youtube.com/watch?v=3e_pbrjXdjU"
             class="aprender__item"
           >
@@ -205,10 +238,12 @@
               src="https://assets-global.website-files.com/61b9e0dd381626819c8d4f83/659dac28e97f5316e0e4fe06_%5BLPY15%5D%20Thumb%20-%20Aula%202%20-%20sem%20data%20(1).webp"
               alt="tumbnail-aula2"
               class="aprender__item-img"
+              loading="lazy"
             />
           </a>
 
           <a
+            target="_blank"
             href="https://www.youtube.com/watch?v=LFXH6fPYAWA"
             class="aprender__item"
           >
@@ -216,10 +251,12 @@
               src="https://assets-global.website-files.com/61b9e0dd381626819c8d4f83/64ecec95d687718995720dee_%5BLPY15%5D%20Thumb%20-%20Aula%203.webp"
               alt="tumbnail-aula3"
               class="aprender__item-img"
+              loading="lazy"
             />
           </a>
 
           <a
+            target="_blank"
             href="https://www.youtube.com/watch?v=woyZIlCrxHs"
             class="aprender__item"
           >
@@ -227,11 +264,14 @@
               src="https://assets-global.website-files.com/61b9e0dd381626819c8d4f83/64ececa07913e34e13d347ff_%5BLPY15%5D%20Thumb%20-%20Aula%204.webp"
               alt="tumbnail-aula4"
               class="aprender__item-img"
+              loading="lazy"
             />
           </a>
         </div>
 
-        <button class="botao botao--amarelo botao--centralizado js-botao">
+        <button
+          class="botao botao--amarelo botao--centralizado botao--pequeno js-botao"
+        >
           Quero assistir as aulas de graça
         </button>
       </div>
@@ -241,7 +281,7 @@
       <div class="container container--quem">
         <div class="quem">
           <div class="quem__cabecalho">
-            <h2 class="subtitulo">
+            <h2 class="subtitulo subtitulo--pequeno">
               Quem está organizando a <span>Jornada Python da Hashtag? </span>
             </h2>
           </div>
@@ -265,8 +305,12 @@
 
         <div class="img-lira-logo">
           <img
-            src="https://assets-global.website-files.com/61b9e0dd381626819c8d4f83/62cefb1f2426eab8354fe8d0_foto%20jo%C3%A3o.webp"
+            src="img/lira_logo.webp"
             alt="imagem do Lira"
+            loading="lazy"
+            srcset="img/lira_logo.webp 450w, img/lira_logo_320.webp 320w"
+            sizes="(max-width: 770px) 320px 
+            450px"
           />
         </div>
       </div>
@@ -275,9 +319,10 @@
     <section class="rodape">
       <div class="container container--rodape">
         <img
-          src="https://assets-global.website-files.com/61b9e0dd381626819c8d4f83/61b9f085f608c40d5a8b97f9_logo%20hash%20quadrada%20h%20(1).webp"
+          src="img/logo_hashtag.webp"
           alt="logo da hashtag"
           class="rodape__logo"
+          loading="lazy"
         />
         <a
           href="https://excelparaestagio.klickpages.com.br/politica-privacidade"

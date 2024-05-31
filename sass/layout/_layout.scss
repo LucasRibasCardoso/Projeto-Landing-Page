@@ -1,6 +1,11 @@
 .secao {
   @include flex($direction: column);
   padding: 6rem 2rem;
+  overflow: hidden;
+
+  @include respond(tiny) {
+    padding: 3.9rem 2rem;
+  }
 }
 
 .container {

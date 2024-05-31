@@ -22,23 +22,46 @@
     padding-bottom: 0;
     padding-top: 20rem;
     margin-top: -15rem;
+
+    @include respond(small) {
+      background-image: url(https://cdn.prod.website-files.com/61b9e0dd381626819c8d4f83/62cefd163d834a0c0b773480_%5BBACKGROUND%5D%20-%20BANNER%2005%20-%20mobile.webp);
+      padding-top: 12rem;
+      margin-top: -5rem;
+    }
+
+    @include respond(tiny) {
+      margin-bottom: 0;
+      padding-top: 40rem;
+      margin-top: -28rem;
+    }
   }
 }
 
 .container {
   &--hero {
-    align-items: end;
     position: relative;
+    align-items: end;
     width: 100%;
+
+    @include respond(small) {
+      @include flex($direction: column, $gap: 3rem, $align: center);
+    }
   }
 
   &--passo,
   &--aprender {
     @include flex($direction: column, $gap: 6rem, $align: start);
+    @include respond(small) {
+      gap: 3.9rem;
+    }
   }
 
   &--quem {
     position: relative;
+
+    @include respond(small) {
+      @include flex($direction: column, $align: center);
+    }
   }
 }
 
@@ -47,28 +70,61 @@
     grid-template-columns: repeat(3, 1fr);
     row-gap: 6rem;
     column-gap: 3rem;
+
+    @include respond(small) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include respond(tiny) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &--aprender {
     grid-template-columns: repeat(2, 1fr);
     gap: 4rem;
+
+    @include respond(small) {
+      gap: 2rem;
+    }
+
+    @include respond(tiny) {
+      grid-template-columns: 1fr;
+      row-gap: 3.1rem;
+      align-self: center;
+    }
   }
 }
 
 .div-lira {
   @include flex();
   position: absolute;
-  height: 60rem;
-  width: 100%;
+  width: 70%;
   right: 0;
   bottom: 0;
   transform: translateX(40%);
+
+  @include respond(small) {
+    position: relative;
+    transform: none;
+    width: 100%;
+    max-width: 53rem;
+  }
 }
 
 .img-lira {
   grid-column: 2;
   grid-row: 1 / span 2;
   align-self: center;
+
+  @include respond(small) {
+    grid-row: auto;
+    grid-column: 1 / span 2;
+    justify-self: center;
+  }
+  @include respond(tiny) {
+    grid-column: auto;
+  }
 }
 
 .disclaimer__paragrafo {
@@ -86,6 +142,11 @@
   &-img {
     border-radius: 2rem;
     transition: transform ease 300ms;
+    width: 100%;
+
+    @include respond(tiny) {
+      max-width: 45rem;
+    }
 
     &:hover {
       transform: scale(1.05, 1.05);
@@ -99,6 +160,10 @@
   max-width: 50%;
   width: 100%;
   margin-bottom: 6rem;
+
+  @include respond(small) {
+    max-width: 100%;
+  }
 
   &__cabecalho {
     border-left: solid 4px $cor-amarelo;
@@ -120,4 +185,23 @@
   bottom: 0;
   right: 0;
   width: 40%;
+
+  @include respond(small) {
+    position: relative;
+    width: 40rem;
+  }
+  @include respond(tiny) {
+    position: relative;
+    width: 100%;
+    max-width: 40rem;
+  }
+}
+
+.img-seta {
+  @include respond(small) {
+    width: 3.5rem;
+  }
+  @include respond(tiny) {
+    width: 3rem;
+  }
 }

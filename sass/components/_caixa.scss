@@ -3,11 +3,16 @@
   margin-bottom: 6rem;
   border-radius: 2.5rem;
   padding: 3rem 2rem;
-  max-width: 50rem;
+  max-width: 50%;
   @include flex($direction: column, $align: center, $gap: 2rem);
   position: relative;
   z-index: 1;
   box-shadow: inset 0 0 1rem 0.3rem rgba(0, 0, 0, 0.25);
+
+  @include respond(small) {
+    margin-bottom: 0;
+    max-width: 53rem;
+  }
 
   &__div-logo {
     width: 6.5rem;

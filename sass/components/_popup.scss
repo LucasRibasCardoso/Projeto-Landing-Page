@@ -39,7 +39,6 @@
 
   &__botao {
     @extend %botao;
-    margin-top: 3.1rem;
 
     &--amarelo {
       @extend %botao--amarelo;
@@ -82,6 +81,11 @@
     padding: 3.1rem;
     border-radius: 2.5rem;
     box-shadow: inset 0 0 0.8rem 0.2rem rgb(0, 0, 0, 0.2);
+
+    @include respond(tiny) {
+      max-width: 95%;
+      padding: 2rem;
+    }
 
     &__textos {
       @include flex($direction: column, $gap: 1.6rem);
