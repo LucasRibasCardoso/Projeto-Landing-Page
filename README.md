@@ -1,8 +1,7 @@
 # Landing Page Jornada Python
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/LucasRibasCardoso/Projeto-Ecommerce/blob/main/LICENSE) 
 
-Este projeto foi desenvolvido durante o curso de HTML e CSS da Hashtag Treinamentos. Seu objetivo é práticar as técnicas aprendidas ao longo do curso, como espaçamentos, tamanho de fonte
-paleta de cores, responsividade, entre outros. Nesse projeto foi dado enfâse somente ao HTML, CSS e JavaScript da página, o popup de cadastro é somente para visualização. Seu deploy foi realizado na Netlify.
+Este projeto foi desenvolvido durante o curso de HTML e CSS da Hashtag Treinamentos. Seu objetivo é práticar as técnicas aprendidas ao longo do curso. Nesse projeto foi dado enfâse somente ao HTML, CSS e JavaScript da página, o popup de cadastro é somente para visualização. Seu deploy foi realizado na Netlify.
 
 ## Tecnologias Utilizadas
 <p>
